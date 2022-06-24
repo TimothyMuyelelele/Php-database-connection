@@ -1,31 +1,4 @@
-<?php
-$server="localhost";
-$username='root';
-$password="";
-$database="zalego";
-
-$conn=mysqli_connect($server,$username,$password,$database);
-if(isset ($_POST["submitButton"] ) )
-{
-    //1.Fetch form data
-    $firstname=$_POST["firstname"];
-    $lastName=$_POST["lastName"];
-    $email=$_POST["email"];
-    $phone=$_POST["phone_number"];
-    $message=$_POST["message"];
-    //Submit form data
-    $insert_data= mysqli_query($conn,"INSERT INTO 
-    contactus(firstname,lastname,email,phonenumber,message)
-    VALUES('$firstname','$lastName','$email','$phone','$message')
-    ");  
-    if($insert_data){
-        echo "Data submitted successfully";
-    }
-    else{
-        echo"Error occured";
-    }                
-}
-?>
+<?php include("process.php") ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +22,7 @@ if(isset ($_POST["submitButton"] ) )
                 <div class="navbar-nav">
                     <a href="index.php" class="nav-link active">Home</a>
                     <a href="about-us.php" class="nav-link">About us</a>
-                    <a href="#" class="nav-link">Contact us</a>
+                    <a href="enroll.php" class="nav-link btn btn-primary ">Register now</a>
                 </div>
 
             </div>
@@ -102,7 +75,13 @@ if(isset ($_POST["submitButton"] ) )
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro at, corporis distinctio blanditiis corrupti sunt eaque nostrum voluptates cumque, natus ipsa laboriosam architecto minus, quibusdam unde sapiente. Voluptatem accusamus ea fugiat ex non, corporis libero aliquid cum a ipsa! Doloribus.
            </p>
            <form action="index.php" method="POST" > 
-               <div class="row">
+           <?php if( $response) 
+               {
+                include("response.php");
+                
+               }
+               ?>
+               <div class="row pt-3">
                 <div class="mb-3 col-lg-6">
                     <label for="firstname" class="form-label">First Name</label>
                     <input type="text" name="firstname" class="form-control" placeholder="Enter your first name please">

@@ -47,7 +47,7 @@ if(isset ($_POST["subscribe"] ) ){
                 <div class="navbar-nav">
                     <a href="index.php" class="nav-link ">Home</a>
                     <a href="about-us.php" class="nav-link active">About us</a>
-                    <a href="#" class="nav-link">Contact us</a>
+                    <a href="enroll.php" class="nav-link btn btn-primary ">Register now</a>
                 </div>
 
             </div>
