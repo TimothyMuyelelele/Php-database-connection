@@ -110,9 +110,9 @@ include("penroll.php")
                     <label for="gender" class="form-label fw-semibold ">What's your gender?</label>
                     <select class="form-select shadow-sm p-3 mb-5 bg-body rounded " name="gender" aria-label="Default select example" required >
                         <option selected aria-label="Disabled select example" disabled>--select your gender</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Other</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
                     </select>
                     <div class="valid-feedback">
                         good
@@ -131,13 +131,13 @@ include("penroll.php")
                     <label for="courses"class="form-label fw-semibold">what's your prefered course</label>
                     <select class="form-select shadow-sm p-3 mb-5 bg-body rounded " name="course" aria-label="Default select example" required>
                         <option selected aria-label="Disabled select example" disabled>--select your course--</option>
-                        <option value="1">Web design & development</option>
-                        <option value="2">Cyber security</option>
-                        <option value="3">Android application development-Kotlin</option>
-                        <option value="4">Data annotation</option>
-                        <option value="5">Data analysis </option>
-                        <option value="6">software design & development</option>
-                        <option value="7">Data analysis with python</option>
+                        <option value="">Web design & development</option>
+                        <option value="Cyber security">Cyber security</option>
+                        <option value="Android application development-Kotlin">Android application development-Kotlin</option>
+                        <option value="Data annotation">Data annotation</option>
+                        <option value="Data analysis">Data analysis </option>
+                        <option value="Software design & development">Software design & development</option>
+                        <option value="Data analysis with python">Data analysis with python</option>
                     </select>
                     <div class="valid-feedback">
                         Looks good!
