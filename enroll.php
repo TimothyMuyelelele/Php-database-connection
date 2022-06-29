@@ -13,27 +13,12 @@ include("penroll.php")
 </head>
 <body>
      <!-- begin navigation bar-->
-     <nav class="navbar navbar-expand-lg bg-light fixed-top shadow p ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Zalego Academy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDisplayNavigations" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarDisplayNavigations">
-
-                <div class="navbar-nav">
-                    <a href="index.php" class="nav-link ">Home</a>
-                    <a href="about-us.php" class="nav-link">About us</a>
-                    <a href="enroll.php" class="nav-link active btn btn-primary ">Register now</a>
-                </div>
-
-            </div>
-        </div>
-     </nav> -->
+     <?php
+     include("navbar.php")
+     ?>
     <!--End navigation bar -->
     <main class="p-5 mb-4 bg-light rounded-8 mt-4 ">
-        <h1 class="fw-bold text-center">
+        <h1 class="fw-bold text-center mt-4">
             JULY SOFTWARE ENGINEERING BOOTCAMP     
         </h1>
      <div class="container  ">    
@@ -65,7 +50,7 @@ include("penroll.php")
     </p>
      <div class="card">
         <div class="card-body">
-            <h1 class="fw-bold text-center">
+            <h1 class="fw-bold text-center pb-3">
                 Sign up today ?
             </h1>
             <form action="enroll.php" method="POST" class="row g-3 needs-validation "   novalidate>

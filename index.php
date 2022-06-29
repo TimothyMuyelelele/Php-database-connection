@@ -1,4 +1,10 @@
-<?php include("process.php") ?> 
+<?php 
+$response="";
+
+include("process.php") 
+ 
+
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +16,9 @@
 </head>
 <body>
     <!-- begin navigation bar-->
-     <nav class="navbar navbar-expand-lg bg-light fixed-top shadow p ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Zalego Academy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDisplayNavigations" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarDisplayNavigations">
-
-                <div class="navbar-nav">
-                    <a href="index.php" class="nav-link active">Home</a>
-                    <a href="about-us.php" class="nav-link">About us</a>
-                    <a href="enroll.php" class="nav-link btn btn-primary ">Register now</a>
-                </div>
-
-            </div>
-        </div>
-     </nav> -->
+    <?php
+     include("navbar.php")
+     ?>
     <!--End navigation bar -->
 
 

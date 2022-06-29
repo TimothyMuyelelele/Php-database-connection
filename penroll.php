@@ -1,4 +1,6 @@
 <?php
+ $enroll="";
+
 $server="localhost";
 $username="root";
 $password="";
